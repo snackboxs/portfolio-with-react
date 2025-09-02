@@ -24,6 +24,10 @@ export default function Contact({ isVisible }) {
                   <i className="fa-brands fa-viber"></i>
                   <a href="viber://chat?number=+959967033673">+959967033673 (Viber)</a>
                </li>
+               <li>
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/snackboxs">GitHub</a>
+               </li>
             </ul>
          </address>
       </footer>
