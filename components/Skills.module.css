@@ -1,0 +1,14 @@
+@media (min-width: 500px) {
+   .container {
+      width: 400px;
+      margin: auto;
+   }
+}
+
+@media (min-width: 800px) {
+   .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+   }
+}

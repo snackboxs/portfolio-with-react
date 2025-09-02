@@ -1,0 +1,51 @@
+.softSkill {
+   background-color: white;
+   padding: 10px;
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.softSkill h2 {
+   text-align: center;
+}
+.softSkillList li {
+   padding: 10px;
+}
+.softSkillList p {
+   display: flex;
+   margin: 0;
+}
+.softSkillList li i {
+   margin-right: 10px;
+   font-size: 25px;
+}
+.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+.visible::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 1px;
+   width: 100%;
+   background-color: black;
+   transform: scaleX(0);
+   animation: runLine 1s ease-in-out 1s 1 forwards;
+}
+@keyframes runLine {
+   0% {
+      transform: scaleX(0);
+      transform-origin: right;
+   }
+   100% {
+      transform: scaleX(.7);
+      transform-origin: center;
+   }
+}
+@media (min-width: 500px) {
+   .softSkill {
+      width: 400px;
+   }
+}

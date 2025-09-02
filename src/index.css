@@ -1,0 +1,14 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+@font-face {
+   font-family: "LibreBaskerville";
+   src: url("/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LostaRiechaDemo";
+  src: url("/fonts/LostaRiechaDemo.ttf") format("truetype");
+}

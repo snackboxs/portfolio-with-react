@@ -1,0 +1,61 @@
+.intro {
+   background-color: #212121;
+   width: 100%;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+.box {
+   width: fit-content;
+   overflow: hidden;
+}
+
+.box h1,
+.box h4 {
+   margin: 5px;
+   opacity: 0;
+   transition: opacity 1s ease, transform 1s ease;
+}
+
+.box h1 {
+   letter-spacing: 5px;
+   font-weight: normal;
+   transform: translateX(500px);
+}
+
+.box h4 {
+   font-size: small;
+   font-weight: lighter;
+   font-family: "LostaRiechaDemo", serif;
+   letter-spacing: 14px;
+   transform: translateX(-500px);
+}
+
+.animate h1,
+.animate h4 {
+   opacity: 1;
+   transform: translateX(0);
+}
+
+.animate h1 {
+   transition-delay: 0s;
+}
+
+.animate h4 {
+   transition-delay: 0.5s;
+}
+
+@media (min-width: 800px) {
+
+   .box h4 {
+      font-size: 1.5rem;
+      text-align: center;
+   }
+   .box h1 {
+      font-size: 2.5rem;
+   }
+}

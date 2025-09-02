@@ -1,0 +1,12 @@
+.container {
+   position: relative;
+   z-index: 1;
+   background-color: white;
+}
+
+@media (min-width: 1100px) {
+   .box {
+      width: 1100px;
+      margin: auto;
+   }
+}

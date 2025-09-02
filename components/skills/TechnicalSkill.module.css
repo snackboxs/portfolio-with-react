@@ -1,0 +1,55 @@
+.technicalSkill {
+   padding: 10px;
+   background-color: white;
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.technicalSkill h2 {
+   text-align: center;
+}
+.img {
+   width: 25px;
+   margin-right: 20px;
+}
+.technicalSkillList p {
+   display: flex;
+   margin: 0;
+}
+.technicalSkillList li {
+   padding: 10px;
+}
+.technicalSkillList li i {
+   margin-right: 10px;
+   font-size: 25px;
+}
+.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+.visible::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 1px;
+   width: 100%;
+   background-color: black;
+   transform: scaleX(0);
+   animation: runLine 1s ease-in-out 1s 1 forwards;
+}
+@keyframes runLine {
+   0% {
+      transform: scaleX(0);
+      transform-origin: left;
+   }
+   100% {
+      transform: scaleX(.7);
+      transform-origin: center;
+   }
+}
+@media (min-width: 500px) {
+   .technicalSkill {
+      width: 400px;
+   }
+}

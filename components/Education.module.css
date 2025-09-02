@@ -1,0 +1,63 @@
+.education {
+   padding: 10px;
+   z-index: 1;
+   background-color: white;
+   margin: auto;
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.education h2 {
+   text-align: center;
+}
+
+.education h4 {
+   font-family: "LibreBaskerville", serif;
+   font-weight: 500;
+}
+
+.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.visible::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 1px;
+   width: 100%;
+   background-color: black;
+   transform: scaleX(0);
+   animation: runLine .5s ease-in-out 1s 1 forwards;
+}
+
+@keyframes runLine {
+   0% {
+      transform: scaleX(0);
+      transform-origin: center;
+   }
+   100% {
+      transform: scaleX(0.9);
+   }
+}
+
+@media (min-width: 500px) {
+   .flexbox {
+      width: 400px;
+      margin: auto   ;
+   }
+}
+
+@media (min-width: 800px) {
+   .flexbox {
+      width: 100%;
+   }
+    .flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
