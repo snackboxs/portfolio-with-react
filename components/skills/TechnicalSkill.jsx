@@ -1,6 +1,9 @@
 import styles from "./TechnicalSkill.module.css";
 import Items from "./Items";
 import { useEffect, useRef, useState } from "react";
+import muiImage from "../../img/mui.png"
+import photoshopImage from '../../img/photoshop.png';
+import illustratorImage from '../../img/illustrator.png';
 
 export default function TechnicalSkill() {
    const [isVisible, setIsVisible] = useState(false);
@@ -60,7 +63,7 @@ export default function TechnicalSkill() {
             </Items>
             <Items text="Material UI">
                <img
-                  src="img/mui.png"
+                  src={muiImage}
                   className={styles.img}
                   alt="MuiImage"
                   style={{ borderRadius: "5px" }}
@@ -74,7 +77,7 @@ export default function TechnicalSkill() {
             </Items>
             <Items text="Adobe Photoshop">
                <img
-                  src="img/photoshop.png"
+                  src={photoshopImage}
                   className={styles.img}
                   alt="PhotoshopImg"
                   style={{ borderRadius: "5px" }}
@@ -82,9 +85,9 @@ export default function TechnicalSkill() {
             </Items>
             <Items text="Adobe Illustrator">
                <img
-                  src="img/illustrator.png"
+                  src={illustratorImage}
                   className={styles.img}
-                  alt="PhotoshopImg"
+                  alt="Illustrator"
                   style={{ borderRadius: "5px" }}
                />
             </Items>
