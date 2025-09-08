@@ -56,6 +56,14 @@ export default function Education() {
                      </p>
                   </article>
                </li>
+               <li>
+                  <article>
+                     <h4>Fairway Technology</h4>
+                     <p>
+                        Professional Web Developer 2 ( <i>2025</i> )
+                     </p>
+                  </article>
+               </li>
             </ul>
          </div>
       </div>

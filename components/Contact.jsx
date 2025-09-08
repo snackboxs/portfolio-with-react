@@ -26,7 +26,7 @@ export default function Contact({ isVisible }) {
                </li>
                <li>
                   <i class="fa-brands fa-github"></i>
-                  <a href="https://github.com/snackboxs">GitHub</a>
+                  <a href="https://github.com/snackboxs" target="_blank">GitHub</a>
                </li>
             </ul>
          </address>
