@@ -75,6 +75,12 @@ export default function TechnicalSkill() {
                   style={{ color: "orange" }}
                ></i>
             </Items>
+            <Items text="Nodejs">
+               <i class="fa-brands fa-node"></i>
+            </Items>
+            <Items text="SQLite">
+               <i class="fa-solid fa-database"></i>
+            </Items>
             <Items text="Adobe Photoshop">
                <img
                   src={photoshopImage}
